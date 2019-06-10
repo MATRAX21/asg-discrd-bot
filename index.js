@@ -44,7 +44,7 @@ if (message.content === '*help') {
       .addField("***bc  :mega:**","**(Broadcast) لارسال رسالة الى جميع اعضاء السيرفر**")
       .addField("***clear :octagonal_sign:**","**لـمسح الشات**")
 	  .addField("***createcolors :cyclone:**","** لـ اضافة 110 لون**")
-	  .addField("**!rainbow :camping:**","**لتغيير لون الرول كل تانية**")
+	  .addField("***rainbow :camping:**","**لتغيير لون الرول كل تانية**")
       .addField("***kick  :outbox_tray:**","**لـطرد الأعضاء**")
       .addField("***ban  :no_entry:**","**لـحظر الأعضاء**")
 .setColor('RANDOM')
@@ -62,10 +62,11 @@ if (message.content === '*help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("** 🎶 Music Commands**","** **")
-      .addField("***play :musical_note:**","**لـتشغيل المطلوب**")
-      .addField("***stop  :musical_keyboard:**","**لـايقاف المطلوب**")
-      .addField("***pause :musical_score:**","**لـايقاف المطوب مؤقت**")
-      .addField("***resume :mute: **","**لـتشغيل المطوب بعد التوقيف**")
+      .addField("***play :musical_note:**","**لتشغيل المطلوب**")
+      .addField("***stop  :musical_keyboard:**","**لايقاف المطلوب**")
+      .addField("***pause :musical_score:**","**لايقاف المطوب مؤقت**")
+      .addField("***resume :mute: **","**لتشغيل المطوب بعد التوقيف**")
+      .addField("***add :musical_note:**","**لاضافة الاغنية الى قائمة الاغاني**")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
