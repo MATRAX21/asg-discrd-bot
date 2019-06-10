@@ -209,10 +209,18 @@ if(message.content.split(' ')[0] == '*bc') {
     }
 })
     client.on('message', message => {
-     if (message.content === "*id") {
-     let embed = new Discord.RichEmbed()
-  .setThumbnail(message.author.avatarURL)  
-  .setAuthor(message.author.username)
+   if (message.content.startsWith("*id")) {
+                if(!message.channel.guild) return message.reply('** This command only for servers**');
+
+               var mentionned = message.mentions.users.first();
+    var mentionavatar;
+      if(mentionned){
+          var mentionavatar = mentionned;
+      } else {
+          var mentionavatar = message.author;
+          
+      }
+   let embed = new Discord.RichEmbed()
 .setDescription("معلومات عن الحــساب")
                .setFooter(`ASG ESPORTS System.`, '')
   .setColor("#9B59B6")
@@ -302,7 +310,7 @@ const secreT = [
     }
 });
 client.on('message', message => {
-   if (message.content.startsWith("id")) {
+   if (message.content.startsWith("*id")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
 
                var mentionned = message.mentions.users.first();
