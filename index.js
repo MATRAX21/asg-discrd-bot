@@ -3,7 +3,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   client.user.setGame(` By MΛTЯIXᴴᴰ#0028 .`,'https://www.twitch.tv/ASG');
   console.log('---------------');
-  console.log('Random Gate System Is Online')
+  console.log('ASG ESPORTS System Is Online')
   console.log('---------------')
 });
 client.on('message', message => {
@@ -44,7 +44,8 @@ if (message.content === '*help') {
       .addField("***bc  :mega:**","**(Broadcast) لارسال رسالة الى جميع اعضاء السيرفر**")
       .addField("***clear :octagonal_sign:**","**لـمسح الشات**")
 	  .addField("***createcolors :cyclone:**","** لـ اضافة 110 لون**")
-	  .addField("***rainbow or *startdisco :camping:**","**لتغيير لون الرول كل تانية**")
+	  .addField("***rainbow :camping:**","**لتغيير لون الرول كل تانية**")
+	  .addField("***stop :camping:**","**لايقاف تغيير لون الرول كل تانية**")
       .addField("***kick  :outbox_tray:**","**لـطرد الأعضاء**")
       .addField("***ban  :no_entry:**","**لـحظر الأعضاء**")
 .setColor('RANDOM')
