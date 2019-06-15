@@ -44,7 +44,7 @@ if (message.content === '*help') {
       .addField("***bc  :mega:**","**(Broadcast) لارسال رسالة الى جميع اعضاء السيرفر**")
       .addField("***clear :octagonal_sign:**","**لـمسح الشات**")
 	  .addField("***createcolors :cyclone:**","** لـ اضافة 110 لون**")
-	  .addField("***rainbow :camping:**","**لتغيير لون الرول كل تانية**")
+	  .addField("***rainbow or *startdisco :camping:**","**لتغيير لون الرول كل تانية**")
       .addField("***kick  :outbox_tray:**","**لـطرد الأعضاء**")
       .addField("***ban  :no_entry:**","**لـحظر الأعضاء**")
 .setColor('RANDOM')
