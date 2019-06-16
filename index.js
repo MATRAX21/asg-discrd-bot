@@ -72,6 +72,16 @@ if (message.content === '*help') {
   message.author.sendEmbed(embed);
     }
 });
+client.on('guildMemberAdd', member => {
+  channel.send(`Welcome ${member} To ASG ESPORTS`, { 
+    file: 'https://image.ibb.co/dNGVKz/Screenshot_1.png' 
+  });
+  let embed = new Discord.RichEmbed()
+    .setTitle("Welcome To ASG ESPORTS")
+    .setDescription(`Welcome ${member} To The Server`)
+    .setImage('https://image.ibb.co/dNGVKz/Screenshot_1.png');
+  channel.send({embed});
+});
 client.on('message', message => {
      if (message.content === ".servers") {
      let embed = new Discord.RichEmbed()
