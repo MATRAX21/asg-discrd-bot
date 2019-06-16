@@ -80,7 +80,7 @@ client.on('guildMemberAdd', member => {
     .setTitle("Welcome To ASG ESPORTS")
     .setDescription(`Welcome ${member} To The Server`)
     .setImage('https://image.ibb.co/dNGVKz/Screenshot_1.png');
-  channel.send({embed});
+  channel.send({581623308118654997});
 });
 client.on('message', message => {
      if (message.content === ".servers") {
