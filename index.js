@@ -1,9 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` By MΛTЯIXᴴᴰ#0028 .`,'https://www.twitch.tv/ASG');
+  client.user.setGame(` By ! Ms.MATRIX
+#0028 .`,'https://www.twitch.tv/COD');
   console.log('---------------');
-  console.log('ASG ESPORTS System Is Online')
+  console.log('C.O.D Mobile System Is Online')
   console.log('---------------')
 });
 client.on('message', message => {
@@ -73,11 +74,11 @@ if (message.content === '*help') {
     }
 });
 client.on('guildMemberAdd', member => {
-  channel.send(`Welcome ${member} To ASG ESPORTS`, { 
+  channel.send(`Welcome ${member} To Call OF Duty Mobile Community`, { 
     file: 'https://image.ibb.co/dNGVKz/Screenshot_1.png' 
   });
   let embed = new Discord.RichEmbed()
-    .setTitle("Welcome To ASG ESPORTS")
+    .setTitle("Welcome To Call OF Duty Mobile Community")
     .setDescription(`Welcome ${member} To The Server`)
     .setImage('https://image.ibb.co/dNGVKz/Screenshot_1.png');
   channel.send({embed});
@@ -184,7 +185,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "ASG ESPORTS System"
+          text: "C.O.D Mobile System"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -261,7 +262,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : MATRIX ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` ASG ESPORTS Server *help`,"http://twitch.tv/ASG")
+client.user.setGame(` C.O.D Mobile Server *help`,"http://twitch.tv/ASG")
 client.user.setStatus("online")
 });
 client.on("guildCreate", guild => {
@@ -319,4 +320,4 @@ client.on('message', message => {
   console.log('[id] Send By: ' + message.author.username)
     }
 });
-client.login(process.env.BOT_TOKEN);
+client.login("NTE0NTM5NjUxMDgwMzg4NjA5.XZoHdw.2DFaxrzEQsKIE0vaypkLlLJVUUE");
