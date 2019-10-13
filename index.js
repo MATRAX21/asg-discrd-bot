@@ -320,4 +320,4 @@ client.on('message', message => {
   console.log('[id] Send By: ' + message.author.username)
     }
 });
-client.login("NTE0NTM5NjUxMDgwMzg4NjA5.XZoHdw.2DFaxrzEQsKIE0vaypkLlLJVUUE");
+client.login(process.env.BOT_TOKEN);
